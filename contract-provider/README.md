@@ -1,14 +1,14 @@
 # Spring Cloud Contract
 
----
+
 
 ## Provider端
 
----
+
 
 ### 导入依赖
 
----
+
 
 初始化项目之后，首先在build.gradle中添加Contract相关依赖
 
@@ -58,7 +58,7 @@ docker run -d -p 8081:8081 --name nexus sonatype/nexus
 
 ### 编写测试基类代码
 
----
+
 
 ```java
 @RunWith(SpringRunner.class)
@@ -81,7 +81,7 @@ public abstract class ProductBaseTest {
 
 ### 创建stubs
 
----
+
 
 在test/resources/contracts目录下编写stubs文件，编写stubs的方式有两种，yaml和groovy，以groovy为例展示如何编写stubs
 
@@ -108,7 +108,7 @@ Contract.make {
 
 ### 创建db-rider数据库数据
 
----
+
 
 在test/resouces/datasets目录下编写对应的yaml文件，在test数据库导入数据供测试使用。
 
